@@ -1,0 +1,145 @@
+* {
+    background: #F3F5FC;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    padding-top: 15px;
+    margin-left: 10px;
+    width: 12%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.text-area {
+    border: none;
+    color: #B0BEA9;
+    margin-top: 20px;
+    text-transform: lowercase;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #B0BEA9;
+}
+
+.respuesta {
+    background: #ffffff;
+    border: none;
+    color: #7180AC;
+    background-image: url(./img/personajee.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.respuesta:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+}
+
+button {
+    background-color: #B0BEA9;
+    border: 1px solid #B0BEA9;
+    border-radius: 20px;
+    color: #7180AC;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #7180AC;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.bn-desencriptar {
+    background-color: #7180AC;
+    border: 1px solid #7180AC;
+    color: #ffffff;
+}
+
+.bn-copiar {
+    background-color: #ffffff;
+    border: 1px solid #7180AC;
+    color: #7180AC;
+    margin-top: 20px;
+}
+
+.info {
+    color: #7180AC;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #7180AC;
+}
+
+
+@media (max-width: 768px) {
+    .text-area, .respuesta {
+        width: 90%;
+        max-width: none;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    button {
+        width: 90%;
+    }
+}
