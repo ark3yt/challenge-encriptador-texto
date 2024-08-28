@@ -23,4 +23,4 @@ Las siguientes reglas se utilizan para encriptar y desencriptar el texto:
 
 ---
 
-**Emiliano Rodriguez**
+**Luis Ponce de Leon**
